@@ -4,16 +4,15 @@ var img = [
     './img/redDress.jpg', 
     './img/wedding.jpg', 
     './img/swimsuit.jpg',
-    './img/swimsuit.jpg'
 ]
 
-var old = 5
+var old = 4
 
 function randomize() {
     let root = document.documentElement
     root.style.setProperty('--image', 'url(' + img[old] + ')')
     old++
-    if (old > 5) {
+    if (old > 4) {
         old = 0
     }
     var ul = document.querySelector('#puzz');
